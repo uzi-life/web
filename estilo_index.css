@@ -1,0 +1,162 @@
+
+* {
+    margin : 0;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+body{
+
+    font-size: 16px;
+    font-family: "Lato", regular;
+    background-color: #f4f6ff;
+    line-height: 1.5em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.titulo h1{
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+
+.titulo{
+    background-color: #8c6cff9f;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+}
+
+.menu{
+    background-color: #edb2ff;
+    overflow: hidden;
+}
+
+.menu a{
+    font-size: 16px;
+    float:left;
+    display: block;
+    color: #a0618a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color:cornsilk;
+    background-color: rgb(255, 134, 219);
+}
+
+.cuerpo{
+    margin-top: 1%;
+}
+
+
+.cuerpo::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+    min-height: 10vh;
+}
+
+
+
+.pie{
+    padding: 20px;
+    background-color: #5D32F6;
+    text-align: center;
+}
+
+.pie p {
+    color: white;
+    /*font-family: "OpenSans", regular;*/
+    font-size: 14px;
+}
+
+.pie img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.centraImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imagenCent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seccion2{
+    padding-top: 5%;
+}
+@media screen and (max-width: 1000px){
+    .izq, .der{
+        float: left;
+        width: 100%;
+        padding: 0%;
+    }
+    .der{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px){/*800 celular*/
+    .menu a {
+        float: none;
+        width: 100%;
+        
+    }
+}
+.caja_texto {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .caja_texto:hover {
+    background-color: #ccc; 
+  }
+  
+  .contenido {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .caja_texto:after {
+    content: '\02795'; /* Simbolo de + */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Simbolo de - */
+  }
