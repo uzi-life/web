@@ -1,3 +1,3 @@
 # web
-# Encontraste mi sitio en GitHUb, que bien ;D
-# Cuidate
+Encontraste mi sitio en GitHUb, que bien ;D
+Cuidate
